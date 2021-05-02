@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Student_accomodation_system</display-name>
+  <servlet>
+  	<servlet-name>reg</servlet-name>
+  	<servlet-class>jdbc.Registration</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>reg</servlet-name>
+  <url-pattern>/regServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>login</servlet-name>
+  	<servlet-class>jdbc.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>login</servlet-name>
+  <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>regowner</servlet-name>
+  	<servlet-class>jdbc.Registerowner</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>regowner</servlet-name>
+  <url-pattern>/ownerServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>regproperty</servlet-name>
+  	<servlet-class>jdbc.Property</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>regproperty</servlet-name>
+  <url-pattern>/propertyServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+</web-app>
